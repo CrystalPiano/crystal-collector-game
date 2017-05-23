@@ -1,17 +1,16 @@
 // Selects random number between 19 and 120 at game start
-//$( document ).ready(function(){
-var Random=Math.floor(Math.random()*101+19)
+var targetRandom=Math.floor(Math.random()*101+19);
   
 
 // Adds random number to the randomNumber id in the html
-$('#randomNumber').text(Random);
-  
+$("#randomNumber").html(targetRandom);
+
 
 // Sets up random numbers for each crystal between 1 and 12
-var num1= Math.floor(Math.random()*11+1)
-var num2= Math.floor(Math.random()*11+1)
-var num3= Math.floor(Math.random()*11+1)
-var num4= Math.floor(Math.random()*11+1)
+var num1= Math.floor(Math.random()*11+1);
+var num2= Math.floor(Math.random()*11+1);
+var num3= Math.floor(Math.random()*11+1);
+var num4= Math.floor(Math.random()*11+1);
 
 
 //  Tally Variables
@@ -20,15 +19,15 @@ var wins= 0;
 var losses = 0;
 
 
-$('#numberWins').text(wins);
-$('#numberLosses').text(losses);
+$('#numberWins').html(wins);
+$('#numberLosses').html(losses);
 
 
 // Game reset
 function reset(){
-      Random=Math.floor(Math.random()*101+19);
-      console.log(Random)
-      $('#randomNumber').text(Random);
+      random=Math.floor(Math.random()*101+19);
+      console.log(random)
+      $('#randomNumber').text(random);
       num1= Math.floor(Math.random()*11+1);
       num2= Math.floor(Math.random()*11+1);
       num3= Math.floor(Math.random()*11+1);
@@ -42,7 +41,7 @@ function reset(){
 function win(){
 alert("You won!");
   wins++; 
-  $('#numberWins').text(wins);
+  $('#numberWins').html(wins);
   reset();
 }
 
@@ -51,7 +50,7 @@ alert("You won!");
 function lose(){
 alert ("Sorry, Try Again!");
   losses++;
-  $('#numberLosses').text(losses);
+  $('#numberLosses').html(losses);
   reset()
 }
 
@@ -60,13 +59,13 @@ alert ("Sorry, Try Again!");
   $('#one').on('click', function(){
     userTotal = userTotal + num1;
     console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal); 
+    $('#finalTotal').html(userTotal); 
           
 // Win/lose conditions
-        if (userTotal == Random){
+        if (userTotal == targetRandom){
           win();
         }
-        else if ( userTotal > Random){
+        else if ( userTotal >targetRandom){
           lose();
         }   
   })  
@@ -74,11 +73,11 @@ alert ("Sorry, Try Again!");
   $('#two').on('click', function(){
     userTotal = userTotal + num2;
     console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal); 
-        if (userTotal == Random){
+    $('#finalTotal').html(userTotal); 
+        if (userTotal == targetRandom){
           win();
         }
-        else if ( userTotal > Random){
+        else if ( userTotal > targetRandom){
           lose();
         } 
   }) 
@@ -86,13 +85,13 @@ alert ("Sorry, Try Again!");
   $('#three').on('click', function(){
     userTotal = userTotal + num3;
     console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal);
+    $('#finalTotal').html(userTotal);
 
 // Win/lose conditions
-          if (userTotal == Random){
+          if (userTotal == targetRandom){
           win();
         }
-        else if ( userTotal > Random){
+        else if ( userTotal > targetRandom){
           lose();
         } 
   })
@@ -102,11 +101,10 @@ alert ("Sorry, Try Again!");
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').text(userTotal); 
       
-          if (userTotal == Random){
+          if (userTotal == targetRandom){
           win();
         }
-        else if ( userTotal > Random){
+        else if ( userTotal > targetRandom){
           lose();
         }
-  });   
-//}); 
+  });
