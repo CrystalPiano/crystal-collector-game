@@ -13,10 +13,10 @@ $("#randomNumber").html(targetRandom);
 
 
 // Sets up random numbers for each crystal between 1 and 12
-var num1= Math.floor(Math.random()*11+1);
-var num2= Math.floor(Math.random()*11+1);
-var num3= Math.floor(Math.random()*11+1);
-var num4= Math.floor(Math.random()*11+1);
+var crystal1= Math.floor(Math.random()*11+1);
+var crystal2= Math.floor(Math.random()*11+1);
+var crystal3= Math.floor(Math.random()*11+1);
+var crystal4= Math.floor(Math.random()*11+1);
 
 
 //  Tally Variables
@@ -34,10 +34,10 @@ function reset(){
   random=Math.floor(Math.random()*101+19);
   console.log(random)
   $('#randomNumber').text(random);
-  num1= Math.floor(Math.random()*11+1);
-  num2= Math.floor(Math.random()*11+1);
-  num3= Math.floor(Math.random()*11+1);
-  num4= Math.floor(Math.random()*11+1);
+  crystal1= Math.floor(Math.random()*11+1);
+  crystal2= Math.floor(Math.random()*11+1);
+  crystal3= Math.floor(Math.random()*11+1);
+  crystal4= Math.floor(Math.random()*11+1);
   userTotal= 0;
   $('#finalTotal').text(userTotal);
 } 
@@ -63,7 +63,7 @@ alert ("Sorry, Try Again!");
 
 // Click event for jewels
   $('#one').on('click', function(){
-    userTotal = userTotal + num1;
+    userTotal = userTotal + crystal1;
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').html(userTotal); 
           
@@ -77,7 +77,7 @@ alert ("Sorry, Try Again!");
   })  
 
   $('#two').on('click', function(){
-    userTotal = userTotal + num2;
+    userTotal = userTotal + crystal2;
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').html(userTotal); 
       if (userTotal == targetRandom){
@@ -89,7 +89,7 @@ alert ("Sorry, Try Again!");
   }) 
 
   $('#three').on('click', function(){
-    userTotal = userTotal + num3;
+    userTotal = userTotal + crystal3;
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').html(userTotal);
 
@@ -103,7 +103,7 @@ alert ("Sorry, Try Again!");
   })
 
   $('#four').on('click', function(){
-    userTotal = userTotal + num4;
+    userTotal = userTotal + crystal4;
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').text(userTotal); 
       if (userTotal == targetRandom){
