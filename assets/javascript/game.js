@@ -61,8 +61,16 @@ alert ("Sorry, Try Again!");
 }
 
 // Opening animation for crystals
-  $("#one" "#two" "#three" "#four").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
-  $("#one" "#two" "#three" "#four").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
+$("#one").load('load', function(){
+  $("#one").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
+  $("#one").velocity({translateY: "0px", rotateZ: "0deg", duration: 100});
+  $("#two").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 },{ delay:200 });
+  $("#two").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
+  $("#three").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 },{ delay:400 });
+  $("#three").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
+  $("#four").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 },{ delay:600 });
+  $("#four").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
+})
 
 // Click event for jewels
   $('#one').on('click', function(){
