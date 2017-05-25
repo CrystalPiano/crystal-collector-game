@@ -60,10 +60,16 @@ alert ("Sorry, Try Again!");
   reset()
 }
 
+// Opening animation for crystals
+  $("#one" "#two" "#three" "#four").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
+  $("#one" "#two" "#three" "#four").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
 
 // Click event for jewels
   $('#one').on('click', function(){
     userTotal = userTotal + crystal1;
+    //$("#one").velocity("fadeIn", { duration: 250 })
+    $("#one").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
+    $("#one").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').html(userTotal); 
           
@@ -78,6 +84,9 @@ alert ("Sorry, Try Again!");
 
   $('#two').on('click', function(){
     userTotal = userTotal + crystal2;
+    //$("#one").velocity("fadeIn", { duration: 250 })
+    $("#two").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
+    $("#two").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').html(userTotal); 
       if (userTotal == targetRandom){
@@ -90,6 +99,9 @@ alert ("Sorry, Try Again!");
 
   $('#three').on('click', function(){
     userTotal = userTotal + crystal3;
+    //$("#one").velocity("fadeIn", { duration: 250 })
+    $("#three").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
+    $("#three").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').html(userTotal);
 
@@ -104,6 +116,9 @@ alert ("Sorry, Try Again!");
 
   $('#four').on('click', function(){
     userTotal = userTotal + crystal4;
+    //$("#one").velocity("fadeIn", { duration: 250 })
+    $("#four").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
+    $("#four").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').text(userTotal); 
       if (userTotal == targetRandom){

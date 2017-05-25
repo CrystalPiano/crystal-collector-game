@@ -2,6 +2,10 @@ body {
 	text-align: center;
 }
 
+img {
+	margin: 20px;
+}
+
 .red {
 	color:red; 
 	font-size:20px;
