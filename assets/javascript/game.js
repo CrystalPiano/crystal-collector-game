@@ -3,6 +3,7 @@
   // Eventually, the game says you win/lose.
 // Also, you can lose before reaching the target number.
 
+//Re-Organize to seperate Variables, Events, and Functions
 
 // Selects random number between 19 and 120 at game start
 var targetRandom=Math.floor(Math.random()*101+19);
