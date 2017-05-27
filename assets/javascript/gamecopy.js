@@ -35,15 +35,15 @@ $('#numberLosses').html(losses);
 
 // Opening animation for crystals
 $("#one").load('load', function(){
-  $("#one").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
-  $("#one").velocity({translateY: "0px", rotateZ: "0deg", duration: 100});
+  $("#one").velocity({translateY: "-50px", rotateZ: "360deg", duration: 10 });
+  $("#one").velocity({translateY: "0px", rotateZ: "0deg", duration: 10});
   $("#two").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 },{ delay:200 });
   $("#two").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
   $("#three").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 },{ delay:400 });
   $("#three").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
   $("#four").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 },{ delay:600 });
   $("#four").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
-})
+});
 
 
 // Game reset
@@ -57,7 +57,7 @@ function reset(){
   crystal4 = Math.floor(Math.random()*11+1);
   userTotal = 0;
   $('#finalTotal').html(userTotal);
-} 
+};
 
 
 // Click events and on click animations for jewels
@@ -126,7 +126,7 @@ alert("You won!");
   wins++; 
   $('#numberWins').html(wins);
   reset();
-}
+};
 
 // Adds loss to userTotal
 function lose(){
@@ -134,4 +134,4 @@ alert("Sorry, Try Again!");
   losses++;
   $('#numberLosses').html(losses);
   reset()
-}
+};

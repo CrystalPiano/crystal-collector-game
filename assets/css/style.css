@@ -1,9 +1,25 @@
 body {
 	text-align: center;
+	background-image: url(http://giovanniamoroso.org/wp-content/uploads/2017/04/Pictures-Of-White-69-with-Pictures-Of-White.jpg);
+	background-position: top;
 }
 
 img {
 	margin: 20px;
+}
+
+p {
+	font-size: 18.5px;
+}
+
+.instructioncontainer {
+	box-shadow: 0px 0px 20px 0px grey;
+	background: white;
+}
+
+.gamecontainer {
+	box-shadow: 0px 0px 20px 0px grey;
+	background: white;
 }
 
 .red {
