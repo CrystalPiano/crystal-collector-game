@@ -1,7 +1,7 @@
 body {
 	text-align: center;
-	background-image: url(http://giovanniamoroso.org/wp-content/uploads/2017/04/Pictures-Of-White-69-with-Pictures-Of-White.jpg);
-	background-position: top;
+	background-image: url(http://wallpaper-gallery.net/images/wallpaper-white-background/wallpaper-white-background-8.jpg);
+	background-size: cover;
 }
 
 img {
@@ -9,17 +9,17 @@ img {
 }
 
 p {
-	font-size: 18.5px;
+	font-size: 19px;
 }
 
 .instructioncontainer {
-	box-shadow: 0px 0px 20px 0px grey;
-	background: white;
+	/*box-shadow: 0px 0px 20px 0px grey;
+	background: white;*/
 }
 
 .gamecontainer {
-	box-shadow: 0px 0px 20px 0px grey;
-	background: white;
+	/*box-shadow: 0px 0px 20px 0px grey;
+	background: white;*/
 }
 
 .red {

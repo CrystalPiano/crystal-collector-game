@@ -35,14 +35,20 @@ $('#numberLosses').html(losses);
 
 // Opening animation for crystals
 $("#one").load('load', function(){
-  $("#one").velocity({translateY: "-50px", rotateZ: "360deg", duration: 10 });
-  $("#one").velocity({translateY: "0px", rotateZ: "0deg", duration: 10});
-  $("#two").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 },{ delay:200 });
-  $("#two").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
-  $("#three").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 },{ delay:400 });
-  $("#three").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
-  $("#four").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 },{ delay:600 });
-  $("#four").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
+  $("#one").velocity({translateY: "-50px", rotateZ: "360deg"});
+  $("#one").velocity({translateY: "0px", rotateZ: "0deg"});
+  $("#two").velocity({translateY: "-50px", rotateZ: "360deg"},{ delay:200 });
+  $("#two").velocity({translateY: "0px", rotateZ: "0deg"});
+  $("#three").velocity({translateY: "-50px", rotateZ: "360deg"},{ delay:400 });
+  $("#three").velocity({translateY: "0px", rotateZ: "0deg"});
+  $("#four").velocity({translateY: "-50px", rotateZ: "360deg"},{ delay:600 });
+  $("#four").velocity({translateY: "0px", rotateZ: "0deg"});
+});
+
+// Easter Egg
+$('#nyan').load('load', function(){
+  $("#nyan").velocity({translateX: "-5000px", duration: 5});
+  $("#nyan").velocity({translateX: "5000px", duration: 5, delay: 200});
 });
 
 
@@ -63,8 +69,8 @@ function reset(){
 // Click events and on click animations for jewels
   $('#one').on('click', function(){
     userTotal = userTotal + crystal1;
-    $("#one").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
-    $("#one").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
+    $("#one").velocity({translateY: "-50px", rotateZ: "360deg" });
+    $("#one").velocity({translateY: "0px", rotateZ: "0deg" });
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').html(userTotal);
           
@@ -79,8 +85,8 @@ function reset(){
 
   $('#two').on('click', function(){
     userTotal = userTotal + crystal2;
-    $("#two").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
-    $("#two").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
+    $("#two").velocity({translateY: "-50px", rotateZ: "360deg"});
+    $("#two").velocity({translateY: "0px", rotateZ: "0deg"});
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').html(userTotal); 
       if (userTotal === targetRandom){
@@ -93,8 +99,8 @@ function reset(){
 
   $('#three').on('click', function(){
     userTotal = userTotal + crystal3;
-    $("#three").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
-    $("#three").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
+    $("#three").velocity({translateY: "-50px", rotateZ: "360deg"});
+    $("#three").velocity({translateY: "0px", rotateZ: "0deg"});
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').html(userTotal);
       if (userTotal === targetRandom){
@@ -107,8 +113,8 @@ function reset(){
 
   $('#four').on('click', function(){
     userTotal = userTotal + crystal4;
-    $("#four").velocity({translateY: "-50px", rotateZ: "360deg", duration: 100 });
-    $("#four").velocity({translateY: "0px", rotateZ: "0deg", duration: 100 });
+    $("#four").velocity({translateY: "-50px", rotateZ: "360deg"});
+    $("#four").velocity({translateY: "0px", rotateZ: "0deg"});
     console.log("New userTotal= " + userTotal);
     $('#finalTotal').html(userTotal); 
       if (userTotal === targetRandom){
