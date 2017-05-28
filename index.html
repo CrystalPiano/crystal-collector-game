@@ -11,10 +11,20 @@
 <div class="header">
 		<h1>Crystal Collector</h1>
 	</div>
+
+<div class="row">
+
+<br><br><br><br><br><br><br>
+
+</div>
+
+<div class="row">
+<div class="instructioncontainer col-md-6">
+
 	<div class="instructions">
 		<h3>Here's how to play</h3>
-			<p>Below is a random number, generated at the start of each game.</p>
-			<p>Also below, are four crystals.</p>
+			<p>To the right is a random number, generated at the start of each game.</p>
+			<p>Also to the right, are four crystals.</p>
 			<ul>
 				<li id="red" class="red">Red</li>
 				<li id="blue" class="blue">Blue</li>
@@ -26,20 +36,25 @@
 			<p>You lose if your score goes over the random number.</p>
 			<p>The value of each crystal is a secret until you click on it, but changes each new game.</p>
 		</div>
+
+</div>
+
+<div class="gamecontainer col-md-6">
+
 	<div id="numberToMatch">
-		<h2>Match This Number:
+		<h3>Match This Number:
 			<div id="randomNumber"></div>
-		</h2>
+		</h3>
 	</div>
 	<div id="winsAndLosses">
-		<h2>Wins:
+		<h3>Overall Wins:
 			<div id="numberWins"></div>
 			<ul> 
 
 			</ul>
-			Losses: 
+			Overall Losses: 
 			<div id="numberLosses"></div>
-		</h2>
+		</h3>
 	</div>
 	<div id="crystals">
 		<img src="./assets/images/red.png" id="one" alt="Red Crystal">
@@ -48,10 +63,20 @@
 		<img src="./assets/images/green.png" id="four" alt="Green Crystal">
 	</div>
 	<div id="userTotal">
-		<h2>Your total score is:
+		<h3>Your score is:
 			<div id="finalTotal"></div>
-		</h2>
+		</h3>
 	</div>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<br>
+
+</div>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
